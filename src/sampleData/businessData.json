@@ -52,5 +52,68 @@
         "cuisine": "Southern",
         "thumbnail": "gs://calgaryhacks2022-9fb82.appspot.com/south.jpeg",
         "rating": 4.2
+    },
+    {
+        "uid": "asdkjnfdgkjjn44",
+        "name": "Megan's Harvest",
+        "tags": ["Affordable", "Fresh", "High Protein"],
+        "price": 8.50,
+        "cuisine": "American",
+        "thumbnail": "gs://calgaryhacks2022-9fb82.appspot.com/south.jpeg",
+        "rating": 4.1
+    },
+    {
+        "uid": "asdkjnfdgkjjn45",
+        "name": "Parvathi's heaven",
+        "tags": ["Affordable", "Fresh", "Indian"],
+        "price": 4.50,
+        "cuisine": "Indian",
+        "thumbnail": "gs://calgaryhacks2022-9fb82.appspot.com/south.jpeg",
+        "rating": 4.2
+    },
+    {
+        "uid": "asdkjnfdgkjjn46",
+        "name": "Healthy khana",
+        "tags": ["Healthy", "Fresh", "Indian"],
+        "price": 7.50,
+        "cuisine": "Indian",
+        "thumbnail": "gs://calgaryhacks2022-9fb82.appspot.com/south.jpeg",
+        "rating": 3.8
+    },
+    {
+        "uid": "asdkjnfdgkjjn47",
+        "name": "Paradise",
+        "tags": ["Healthy", "Fresh", "Premium"],
+        "price": 14.50,
+        "cuisine": "American",
+        "thumbnail": "gs://calgaryhacks2022-9fb82.appspot.com/south.jpeg",
+        "rating": 3.8
+    },
+    {
+        "uid": "asdkjnfdgkjjn48",
+        "name": "Food.Study.Repeat.",
+        "tags": ["Affordable", "Fresh", "Vegan"],
+        "price": 5.50,
+        "cuisine": "American",
+        "thumbnail": "gs://calgaryhacks2022-9fb82.appspot.com/south.jpeg",
+        "rating": 4.6
+    },
+    {
+        "uid": "asdkjnfdgkjjn49",
+        "name": "Mehta food",
+        "tags": ["Affordable", "Fresh", "Vegan"],
+        "price": 4.50,
+        "cuisine": "Indian",
+        "thumbnail": "gs://calgaryhacks2022-9fb82.appspot.com/south.jpeg",
+        "rating": 4.0
+    },
+    {
+        "uid": "asdkjnfdgkjjn50",
+        "name": "Healthy bakes",
+        "tags": ["Gluten Free", "Fresh", "Vegan"],
+        "price": 5.15,
+        "cuisine": "American",
+        "thumbnail": "gs://calgaryhacks2022-9fb82.appspot.com/south.jpeg",
+        "rating": 3.7
     }
 ]
