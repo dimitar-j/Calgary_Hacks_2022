@@ -8,7 +8,6 @@ import FormControlLabel from '@mui/material/FormControlLabel';
 
 var stylingObjects = {
     container: {
-        borderRight: "1px solid",
         width: "100%",
         height: "100%",
         padding: "20px"

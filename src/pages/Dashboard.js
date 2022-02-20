@@ -11,11 +11,11 @@ function Dashboard() {
     return (
         <div>
             <DashNav></DashNav>
-            <Grid container style={{height: "100%"}} spacing={10}>
-                <Grid item xs={2}>
+            <Grid container style={{height: "100%"}} spacing={5}>
+                <Grid item xs={3}>
                     <Filter></Filter>
                 </Grid>
-                <Grid item xs={10}>
+                <Grid item xs={9}>
                     <Listings></Listings>
                 </Grid>
             </Grid>
