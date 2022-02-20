@@ -3,7 +3,7 @@ In the project directory, run:
 
 ### `npm install`
 
-Then:\
+Then:
 
 ### `npm start`
 
