@@ -15,6 +15,7 @@ var stylingObject = {
     logoContainer: {
         width: "70px",
         height: "70px",
+        display: "flex"
     }
 }
 
@@ -25,6 +26,7 @@ function HomeNav() {
                 <Button href="/">
                     <img src={require('../assets/logo.png')} width= "100%" height="100%"/>
                 </Button>
+                <h2>{'\u0020'}MyChef</h2>
             </div>
         </div>
     )
