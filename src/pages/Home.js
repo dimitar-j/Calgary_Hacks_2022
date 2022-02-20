@@ -6,7 +6,7 @@ import Footer from '../components/Footer'
 
 function Home() {
     return (
-        <div>
+         <div>
             <HomeNav></HomeNav>
             <Hero></Hero>
             <div class="custom-shape-divider-bottom-1645315839">
