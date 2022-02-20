@@ -8,7 +8,6 @@ import FormControlLabel from '@mui/material/FormControlLabel';
 
 var stylingObjects = {
     container: {
-        borderRight: "1px solid",
         width: "100%",
         height: "100%",
         padding: "20px"
@@ -18,17 +17,18 @@ class Filter extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            ratingFilter: 4
+            rating: 0
         }
         this.handleChange = this.handleChange.bind(this);
     }
 
-    handleChange(event, property) {
+    handleChange(event, property, option = null) {
         this.setState({[property]: event.target.value});
+        this.props.handleFilterChange(event, property, option)
     }
 
     render(){
-        const {ratingFilter} = this.state;
+        const {rating} = this.state;
         return(
             <div style={stylingObjects.container}>
                 <h1>
@@ -39,9 +39,9 @@ class Filter extends React.Component {
                 </p>
                 <Rating
                     name="simple-controlled"
-                    value={ratingFilter}
+                    value={rating}
                     onChange={(event, newValue) => {
-                        this.handleChange(event, "ratingFilter");
+                        this.handleChange(event, "rating");
                     }}
                 />
                 <br></br>
@@ -50,20 +50,52 @@ class Filter extends React.Component {
                 <p style={{fontSize: "24px"}}>
                     Price
                 </p>
-                <TextField id="outlined-basic" type="number" label="Min" variant="outlined" size="small" />
+                <TextField 
+                    id="outlined-basic" 
+                    type="number" label="Min" 
+                    variant="outlined" 
+                    size="small" 
+                    onChange={(event, newValue) => {
+                        this.handleChange(event, "minPrice");
+                    }}
+                />
                 <br></br>
                 <br></br>
-                <TextField id="outlined-basic" type="number" label="Max" variant="outlined" size="small" />
+                <TextField id="outlined-basic" 
+                    type="number" label="Max" 
+                    variant="outlined" 
+                    size="small" 
+                    onChange={(event, newValue) => {
+                        this.handleChange(event, "maxPrice");
+                    }}
+                />
                 <br></br>
                 <br></br>
                 <Divider></Divider>
                 <p style={{fontSize: "24px"}}>
-                    Options
+                    Dietary Restrictions
                 </p>
                 <FormGroup>
-                    <FormControlLabel control={<Checkbox/>} label="Vegan" />
-                    <FormControlLabel control={<Checkbox />} label="Gluten Free" />
-                    <FormControlLabel control={<Checkbox />} label="Dairy Free" />
+                    <FormControlLabel 
+                        control={<Checkbox/>} 
+                        label="Vegan" 
+                        onChange={(event, newValue) => {
+                            this.handleChange(event, "filters", "Vegan");
+                        }}/>
+                    <FormControlLabel 
+                        control={<Checkbox />} 
+                        label="Gluten Free"
+                        onChange={(event, newValue) => {
+                            this.handleChange(event, "filters", "Gluten Free");
+                        }} 
+                    />
+                    <FormControlLabel 
+                        control={<Checkbox />} 
+                        label="Dairy Free" 
+                        onChange={(event, newValue) => {
+                            this.handleChange(event, "filters", "Dairy Free");
+                        }}
+                    />
                 </FormGroup>
             </div>
         )

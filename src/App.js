@@ -21,19 +21,16 @@ function App() {
     const getBusinesses = async () => {
       const data = await getDocs(businessCollectionRef);
       setBusinesses(data.docs.map((doc) => ({...doc.data(), id: doc.id})));
-      console.log(businesses);
     }
 
     getBusinesses();
 
   }, []);
-
   return (
-
       <div className="App">
         <Routes>
           <Route path = "/" element = {<HomePage/>} exact/>
-          <Route path = "/dashboard" element = {<Dashboard/>} exact/>
+          <Route path = "/dashboard" element = {<Dashboard listings={businesses} fake={["abc","def"]}/>} exact/>
           {/* <Route path = "/login" component = {<Login/>}/>
           <Route path = "/register" component = {<Register/>}/>
           <Route path = "/tags" component = {<Tags/>}/> */}
