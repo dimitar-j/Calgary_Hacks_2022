@@ -12,34 +12,22 @@ var stylingObjects = {
 }
 
 export default class Listings extends Component {
+    constructor(props){
+        super(props);
+        
+    }
     render() {
+        console.log(this.props);
         return (
             <div style={stylingObjects.container}>
                 <h1>
                     Recommended for you
                 </h1>
                 <Grid container spacing={2}>
-                    <Grid item xs={11} md = {6}>
-                        <Listing></Listing>
-                    </Grid>
-                    <Grid item xs={11} md = {6}>
-                        <Listing></Listing>
-                    </Grid>
-                    <Grid item xs={11} md = {6}>
-                        <Listing></Listing>
-                    </Grid>
-                    <Grid item xs={11} md = {6}>
-                        <Listing></Listing>
-                    </Grid>
-                    <Grid item xs={11} md = {6}>
-                        <Listing></Listing>
-                    </Grid>
-                    <Grid item xs={11} md = {6}>
-                        <Listing></Listing>
-                    </Grid>
-                    <Grid item xs={11} md = {6}>
-                        <Listing></Listing>
-                    </Grid>
+                    {this.props.listings.map((listing) => 
+                    (<Grid item xs={11} md = {6}>
+                        <Listing data={listing}></Listing>
+                    </Grid>))}
                 </Grid>
             </div>
         )

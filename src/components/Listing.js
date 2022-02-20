@@ -25,16 +25,15 @@ export default class Listing extends Component {
                     <CardMedia
                     component="img"
                     height="140"
-                    image="/static/images/cards/contemplative-reptile.jpg"
-                    alt="green iguana"
+                    image={this.props.data.thumbnail}
+                    alt="photo of food"
                     />
                     <CardContent>
                     <Typography gutterBottom variant="h5" component="div">
-                        Lizard
+                        {this.props.data.name}
                     </Typography>
                     <Typography variant="body2" color="text.secondary">
-                        Lizards are a widespread group of squamate reptiles, with over 6,000
-                        species, ranging across all continents except Antarctica
+                        {this.props.data.description}
                     </Typography>
                     </CardContent>
                 </CardActionArea>

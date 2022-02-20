@@ -7,7 +7,8 @@ import Listings from '../components/Listings'
 import Grid from '@mui/material/Grid'
 import Footer from '../components/Footer'
 
-function Dashboard() {
+function Dashboard(props) {
+
     return (
         <div>
             <DashNav></DashNav>
@@ -16,7 +17,7 @@ function Dashboard() {
                     <Filter></Filter>
                 </Grid>
                 <Grid item xs={9}>
-                    <Listings></Listings>
+                    <Listings listings={props.listings} fake={props.fake}></Listings>
                 </Grid>
             </Grid>
             <Footer></Footer>
