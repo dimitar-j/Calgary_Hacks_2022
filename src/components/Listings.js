@@ -14,8 +14,34 @@ var stylingObjects = {
 export default class Listings extends Component {
     constructor(props){
         super(props);
-        
+        console.log(this.props);
     }
+
+    isValid(listing){
+        console.log(listing);
+        if (!isNaN(this.props.minPrice) && this.props.minPrice !== null){
+            if (listing.price < this.props.minPrice ){
+                return false;
+            }
+        }
+        if (!isNaN(this.props.maxPrice) && this.props.minPrice !== null){
+            if (listing.price > this.props.maxPrice){
+                return false;
+            }
+        }
+        if (!isNaN(this.props.rating) && this.props.minPrice !== null) {
+            if (listing.rating < this.props.rating) {
+                return false;
+            }
+        }
+        for (let i = 0; i < this.props.filters.length; i++){
+            if (!listing.tags.includes(this.props.filters[i])) {
+                return false;
+            }
+        }
+        return true;
+    }
+
     render() {
         return (
             <div style={stylingObjects.container}>
@@ -23,10 +49,16 @@ export default class Listings extends Component {
                     Recommended for you
                 </h1>
                 <Grid container spacing={5}>
-                    {this.props.listings.map((listing) => 
-                    (<Grid item xs={11} md = {6}>
-                        <Listing data={listing}></Listing>
-                    </Grid>))}
+                    {this.props.listings.map((listing, index) => 
+                    /* (<Grid item xs={11} md = {6} key={index}>
+                        {(this.isValid(listing) ? <Listing data={listing}></Listing> : null)}
+                    </Grid>)) */
+                        (this.isValid(listing) ? 
+                            <Grid item xs={11} md={6} key={index}>
+                                <Listing data={listing}></Listing>
+                            </Grid>
+                        : null )
+                    )}
                 </Grid>
             </div>
         )

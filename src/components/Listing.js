@@ -48,7 +48,6 @@ export default class Listing extends Component {
 
     renderDialog(){
         const {dialogOpened} = this.state;
-        console.log(this.props)
         return(
             <Dialog
                 width={"md"}
@@ -69,8 +68,8 @@ export default class Listing extends Component {
                     <br></br>
                     <Typography variant="h5">Menu</Typography>
                     <br></br>
-                    {this.props.data.menu.map((item) => (
-                        <Typography>
+                    {this.props.data.menu.map((item, index) => (
+                        <Typography key={index}>
                             {item}
                         </Typography>
                     ))}
@@ -100,8 +99,8 @@ export default class Listing extends Component {
                     <br></br>
                     <Typography variant="h5">Reviews</Typography>
                     <br></br>
-                    {this.props.data.reviews.map((review) => (
-                        <Typography>
+                    {this.props.data.reviews.map((review, index) => (
+                        <Typography key={index}>
                             - "{review}"
                         </Typography>
                     ))}
@@ -119,7 +118,7 @@ export default class Listing extends Component {
     render() {
         return (
             <React.Fragment>
-                <Card elevation={5}>
+                <Card elevation={15}>
                     <CardActionArea
                         onClick={this.handleChange}
                     >
@@ -134,7 +133,7 @@ export default class Listing extends Component {
                             {this.props.data.name}
                         </Typography>
                         <div style={stylingObject.tagContainer}>
-                            {this.props.data.tags.map((tag) => (<h4 style={stylingObject.tag}>{tag}</h4>))}
+                            {this.props.data.tags.map((tag, index) => (<h5 style={stylingObject.tag} key={index}>{tag}</h5>))}
                         </div>
                         </CardContent>
                     </CardActionArea>
