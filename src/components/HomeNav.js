@@ -34,6 +34,7 @@ function HomeNav() {
             <div style={stylingObject.linksContainter}>
                 <Button href="/" variant="text" style={{color:"black"}} >Home</Button>
                 <Button href = "/dashboard"variant="text" style={{color:"black"}}>Explore</Button>
+                <Button href = "/register" variant="text" style={{color:"black"}}>Register</Button>
                 <Button variant="text" style={{color:"black"}}>Log In</Button>
             </div>
         </div>
