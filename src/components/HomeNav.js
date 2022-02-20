@@ -25,11 +25,13 @@ function HomeNav() {
     return (
         <div style = {stylingObject.container}>
             <div style={stylingObject.logoContainer}>
-                <img src={require('../assets/logo.png')} width= "100%" height="100%"/>
+                <Button>
+                    <img src={require('../assets/logo.png')} width= "100%" height="100%"/>
+                </Button>
             </div>
             <div style={stylingObject.linksContainter}>
-                <Button variant="text" style={{color:"black"}}>Home</Button>
-                <Button variant="text" style={{color:"black"}}>Explore</Button>
+                <Button href="/" variant="text" style={{color:"black"}} >Home</Button>
+                <Button href = "/dashboard"variant="text" style={{color:"black"}}>Explore</Button>
                 <Button variant="text" style={{color:"black"}}>Log In</Button>
             </div>
         </div>

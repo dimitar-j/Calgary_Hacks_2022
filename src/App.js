@@ -13,8 +13,8 @@ function App() {
       <div className="App">
         <Routes>
           <Route path = "/" element = {<HomePage/>} exact/>
-{/*       <Route path = "/login" component = {<Login/>}/>
-          <Route path = "/dashboard" component = {<Dashboard/>}/>
+          <Route path = "/dashboard" element = {<Dashboard/>} exact/>
+          {/* <Route path = "/login" component = {<Login/>}/>
           <Route path = "/register" component = {<Register/>}/>
           <Route path = "/tags" component = {<Tags/>}/> */}
         </Routes>

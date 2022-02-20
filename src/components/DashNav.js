@@ -22,7 +22,9 @@ function HomeNav() {
     return (
         <div style = {stylingObject.container}>
             <div style={stylingObject.logoContainer}>
-                <img src={require('../assets/logo.png')} width= "100%" height="100%"/>
+                <Button href="/">
+                    <img src={require('../assets/logo.png')} width= "100%" height="100%"/>
+                </Button>
             </div>
         </div>
     )
