@@ -12,22 +12,22 @@ code {
     monospace;
 }
 
-.custom-shape-divider-bottom-1645315839 {
+.custom-shape-divider-top-1645322238 {
   position: absolute;
-  bottom: 0;
+  top: 0;
   left: 0;
   width: 100%;
   overflow: hidden;
   line-height: 0;
 }
 
-.custom-shape-divider-bottom-1645315839 svg {
+.custom-shape-divider-top-1645322238 svg {
   position: relative;
   display: block;
-  width: calc(155% + 1.3px);
-  height: 246px;
+  width: calc(100% + 1.3px);
+  height: 150px;
 }
 
-.custom-shape-divider-bottom-1645315839 .shape-fill {
-  fill: #F6836B;
+.custom-shape-divider-top-1645322238 .shape-fill {
+  fill: #FFFFF3;
 }

@@ -8,8 +8,8 @@ var stylingObject = {
         background: "#FFFFF3",
         justifyContent: "space-evenly",
         alignItems: "center",
-        paddingTop: "42px",
-        paddingBottom: "310px"
+        paddingTop: "45px",
+        paddingBottom: "90px"
     },
     textContainer: {
         
