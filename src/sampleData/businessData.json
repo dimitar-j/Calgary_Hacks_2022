@@ -1,0 +1,56 @@
+[
+    {
+        "uid": "asdljndsfjkn3",
+        "name": "Deliciosuly Vegan",
+        "tags": ["Vegan", "Gluten Free", "Affordable", "Indian", "Healthy"],
+        "price": 9.99,
+        "cuisine": "Indian",
+        "thumbnail": "gs://calgaryhacks2022-9fb82.appspot.com/braised-indian-chickpea-stew-in-bowl-with-naan-and-yogurt-1-of-1-500x500.jpeg",
+        "rating": 4.5
+    },
+    {
+        "uid": "zxcjncxzkjn43",
+        "name": "Simply Food",
+        "tags": ["Affordable", "Southern"],
+        "price": 8.00,
+        "cuisine": "Southern",
+        "thumbnail": "gs://calgaryhacks2022-9fb82.appspot.com/soufood.jpeg",
+        "rating": 4.9
+    },
+    {
+        "uid": "sdfjhbb24ui5",
+        "name": "Six Flavors",
+        "tags": ["Low Sodium", "Healthy", "High Protein"],
+        "price": 12.00,
+        "cuisine": "Mediterranean",
+        "thumbnail": "ggs://calgaryhacks2022-9fb82.appspot.com/mediterranean.jpeg",
+        "rating": 3.5
+    },
+    {
+        "uid": "mbklhgmngh234",
+        "name": "Fresh Harvest",
+        "tags": ["Low Carb", "Healthy"],
+        "price": 14.00,
+        "cuisine": "American",
+        "thumbnail": "gs://calgaryhacks2022-9fb82.appspot.com/soufood.jpeg",
+        "rating": 2.9
+    },
+    {
+        "uid": "43nljksdfn35",
+        "name": "EZ Gourmet",
+        "tags": ["Low Fat", "Gluten Free", "Healthy", "Mexican"],
+        "price": 12.00,
+        "cuisine": "Mexican",
+        "thumbnail": "gs://calgaryhacks2022-9fb82.appspot.com/mexican.jpeg",
+        "rating": 4.3
+    },
+    {
+        "uid": "asdkjnfdgkjjn43",
+        "name": "Darby's Kitchen",
+        "tags": ["Affordable", "Southern", "High Protein"],
+        "price": 6.00,
+        "cuisine": "Southern",
+        "thumbnail": "gs://calgaryhacks2022-9fb82.appspot.com/south.jpeg",
+        "rating": 4.2
+    }
+]
