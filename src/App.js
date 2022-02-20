@@ -1,6 +1,7 @@
 import {Routes, Route, BrowserRouter} from "react-router-dom";
 // Home Page
 import HomePage from "./pages/Home.js";
+import Dashboard from "./pages/Dashboard.js";
 /* import Login from "./pages/Login.js";
 import Dashboard from "./pages/Dashboard.js";
 import Register from "./pages/Register.js";
