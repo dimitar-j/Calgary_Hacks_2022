@@ -17,13 +17,12 @@ export default class Listings extends Component {
         
     }
     render() {
-        console.log(this.props);
         return (
             <div style={stylingObjects.container}>
                 <h1>
                     Recommended for you
                 </h1>
-                <Grid container spacing={2}>
+                <Grid container spacing={5}>
                     {this.props.listings.map((listing) => 
                     (<Grid item xs={11} md = {6}>
                         <Listing data={listing}></Listing>
